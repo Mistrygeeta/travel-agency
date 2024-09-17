@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.page{
+    width: 100%;
+    height: 100%;
+    background-image: url(https://media.istockphoto.com/id/483421687/photo/cappadocia-turkey.jpg?s=2048x2048&w=is&k=20&c=Nuv18W7CM24WEr-zUsvneKLzf4jPGyNf_uxIyGX9tu4=);
+
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: slategrey;
+    padding: 10px 25px;
+}
+
+.navbar > h1{
+        font-size: 30px;
+        font-weight: 900;
+        font-family:cursive;
+        color:red;
+}
+
+.navbar > ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    gap: 50px;
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+}
+
+.navbar > ul li{
+    border-bottom: 1px solid transparent;
+    transition: 1s all ; 
+}
+
+.navbar > ul li:hover{
+    cursor: pointer;
+    border-bottom: 1px solid black;
+    background-color: blue;
+    border-radius: 10px;
+    padding: 5px ;
+}
+
+.navbar > button{
+    background-color:rgb(224, 76, 224);
+    width:10%;
+    padding: 10px ;
+    border-radius: 10px;
+    border: none;
+    margin-right: 5px;
+}
+
+.navbar > button:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px white;
+}
+
+img{
+    width: 15%;
+    animation: move 3s  linear 2s infinite ;
+    animation-direction: alternate;
+    position: absolute;
+    top: 10;
+    right: 0;
+    
+}
+
+@keyframes move {
+    from{
+        top:10;
+        right: 0%;
+    }
+    to{
+        right: 70%;
+        bottom: 0;
+    }
+}
+
+.center{
+    width: 50vw;
+    height: 70vh;
+    /* background-color: blue; */
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.center > h1{
+    font-size: 60px;
+    font-weight: 800;
+    padding-top: 70px;
+    margin-left: 10px;
+}
+
+.center > p{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 500;
+    margin: 10px;
+}
+
+.center > input{
+    width: 55%;
+    margin: 25px 140px;
+    height: 10%;
+    border-radius: 15px;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+
